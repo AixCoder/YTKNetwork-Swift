@@ -75,7 +75,7 @@ class NetworkAgent: NSObject {
         case .GET:
             //下载文件get
             //普通get
-            request = manager.request(url, method: .get, parameters: parameters, encoding: URLEncoding.default, headers: nil).rejson
+            request = manager.request(url, method: .get, parameters: parameters, encoding: URLEncoding.default, headers: nil)
         case .POST:
             return manager.request(url, method: .post, parameters: parameters, encoding: URLEncoding.default, headers: nil)
         case .HEAD:
