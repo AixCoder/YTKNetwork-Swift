@@ -26,6 +26,7 @@
 		F62E690B1F625E5A00EE8AA0 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E68F81F625E5A00EE8AA0 /* TaskDelegate.swift */; };
 		F62E690C1F625E5A00EE8AA0 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E68F91F625E5A00EE8AA0 /* Timeline.swift */; };
 		F62E690D1F625E5A00EE8AA0 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E68FA1F625E5A00EE8AA0 /* Validation.swift */; };
+		F62E690F1F629EC300EE8AA0 /* NetworkPrivate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E690E1F629EC300EE8AA0 /* NetworkPrivate.swift */; };
 		F6B79E841F62337E00BA1303 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B79E831F62337E00BA1303 /* AppDelegate.swift */; };
 		F6B79E861F62337E00BA1303 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B79E851F62337E00BA1303 /* ViewController.swift */; };
 		F6B79E891F62337E00BA1303 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6B79E871F62337E00BA1303 /* Main.storyboard */; };
@@ -55,6 +56,7 @@
 		F62E68F81F625E5A00EE8AA0 /* TaskDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDelegate.swift; sourceTree = "<group>"; };
 		F62E68F91F625E5A00EE8AA0 /* Timeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
 		F62E68FA1F625E5A00EE8AA0 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		F62E690E1F629EC300EE8AA0 /* NetworkPrivate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkPrivate.swift; sourceTree = "<group>"; };
 		F6B79E801F62337E00BA1303 /* YTKNetwork-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YTKNetwork-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6B79E831F62337E00BA1303 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6B79E851F62337E00BA1303 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				F6B79E961F62347800BA1303 /* BaseNetworkRequest.swift */,
 				F62E68E11F6236E200EE8AA0 /* NetworkRequest.swift */,
 				F62E68E31F62384400EE8AA0 /* NetworkAgent.swift */,
+				F62E690E1F629EC300EE8AA0 /* NetworkPrivate.swift */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				F62E69041F625E5A00EE8AA0 /* Request.swift in Sources */,
 				F62E690D1F625E5A00EE8AA0 /* Validation.swift in Sources */,
 				F62E68FD1F625E5A00EE8AA0 /* DispatchQueue+Alamofire.swift in Sources */,
+				F62E690F1F629EC300EE8AA0 /* NetworkPrivate.swift in Sources */,
 				F62E690A1F625E5A00EE8AA0 /* SessionManager.swift in Sources */,
 				F62E69091F625E5A00EE8AA0 /* SessionDelegate.swift in Sources */,
 				F62E69021F625E5A00EE8AA0 /* Notifications.swift in Sources */,
