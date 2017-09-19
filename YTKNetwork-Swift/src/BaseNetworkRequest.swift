@@ -41,18 +41,42 @@ class BaseNetworkRequest: NSObject {
         }
     }
     
-    open var response: HTTPURLResponse?
+    fileprivate var _response: HTTPURLResponse?
+    var response: HTTPURLResponse {
+        get{
+            return _response!
+        }
+    }
+    fileprivate var _responseData: Data?
+    var responseData: Data {
+        get{
+            return _responseData!
+        }
+    }
     
-    open var responseData: NSData?
+    fileprivate var _responseString: String?
+    var responseString: String {
+        get{
+            return _responseString!
+        }
+    }
     
-    open var responseString: String?
+    fileprivate var _responseObject: AnyObject?
+    var responseObject: AnyObject{
+        get{
+            return _responseObject!
+        }
+    }
     
-    open var responseObject: AnyObject?
+    fileprivate var _error: NSError?
+    var error: NSError{
+        get{
+            return _error!
+        }
+    }
     
-    open var error: NSError?
-    
-    private var successCompletionBlock: YTKRequestCompletionBlock
-    private var failureCompletionBlock: YTKRequestCompletionBlock
+    var successCompletionBlock: YTKRequestCompletionBlock
+    var failureCompletionBlock: YTKRequestCompletionBlock
     
 
     override init() {
@@ -60,11 +84,11 @@ class BaseNetworkRequest: NSObject {
         failureCompletionBlock = {_ in }
         
         self.requestTask = nil
-        self.response = nil
-        self.responseData = nil
-        self.responseString = nil
-        self.responseObject = nil
-        self.error = nil
+        self._response = nil
+        self._responseData = nil
+        self._responseString = nil
+        self._responseObject = nil
+        self._error = nil
         super.init()
     }
     
@@ -79,7 +103,10 @@ class BaseNetworkRequest: NSObject {
         
         self.successCompletionBlock = success
         self.failureCompletionBlock = failure
+        
+        self.start()
     }
+    
     
     //MARK: 子类复写方法
     
@@ -106,9 +133,34 @@ class BaseNetworkRequest: NSObject {
         return YTKRequestMethod.GET
     }
     
+    func requestHeaderFieldDictionary() -> Dictionary<String, String>? {
+        return nil
+    }
+    
     func jsonValidator() -> Any? {
         return nil
     }
     
     
 }
+
+class ChangeValue {
+    
+    class func changeResponse(_ response: HTTPURLResponse, forRequest: BaseNetworkRequest) {
+        forRequest._response = response
+    }
+    
+    class func changeResponseData(_ data: Data, forRequest: BaseNetworkRequest) {
+        forRequest._responseData = data
+    }
+    
+    class func changeResponseString(_ str: String, forRequest: BaseNetworkRequest) {
+        
+        forRequest._responseString = str
+    }
+    
+    class func changeResponseObject(_ obj: AnyObject, forRequest: BaseNetworkRequest) {
+        forRequest._responseObject = obj
+    }
+}
+

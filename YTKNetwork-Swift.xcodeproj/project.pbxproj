@@ -33,6 +33,8 @@
 		F6B79E8B1F62337E00BA1303 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6B79E8A1F62337E00BA1303 /* Assets.xcassets */; };
 		F6B79E8E1F62337E00BA1303 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6B79E8C1F62337E00BA1303 /* LaunchScreen.storyboard */; };
 		F6B79E971F62347800BA1303 /* BaseNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B79E961F62347800BA1303 /* BaseNetworkRequest.swift */; };
+		F6EEBF331F6A7B5200DD53C3 /* AClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EEBF321F6A7B5200DD53C3 /* AClass.swift */; };
+		F6FA4F9A1F70EA9D00107283 /* GetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FA4F991F70EA9D00107283 /* GetRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +67,8 @@
 		F6B79E8D1F62337E00BA1303 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6B79E8F1F62337E00BA1303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6B79E961F62347800BA1303 /* BaseNetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNetworkRequest.swift; sourceTree = "<group>"; };
+		F6EEBF321F6A7B5200DD53C3 /* AClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AClass.swift; sourceTree = "<group>"; };
+		F6FA4F991F70EA9D00107283 /* GetRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,8 @@
 				F6B79E951F62340E00BA1303 /* src */,
 				F6B79E831F62337E00BA1303 /* AppDelegate.swift */,
 				F6B79E851F62337E00BA1303 /* ViewController.swift */,
+				F6FA4F991F70EA9D00107283 /* GetRequest.swift */,
+				F6EEBF321F6A7B5200DD53C3 /* AClass.swift */,
 				F6B79E871F62337E00BA1303 /* Main.storyboard */,
 				F6B79E8A1F62337E00BA1303 /* Assets.xcassets */,
 				F6B79E8C1F62337E00BA1303 /* LaunchScreen.storyboard */,
@@ -224,10 +230,12 @@
 				F62E68FD1F625E5A00EE8AA0 /* DispatchQueue+Alamofire.swift in Sources */,
 				F62E690F1F629EC300EE8AA0 /* NetworkPrivate.swift in Sources */,
 				F62E690A1F625E5A00EE8AA0 /* SessionManager.swift in Sources */,
+				F6EEBF331F6A7B5200DD53C3 /* AClass.swift in Sources */,
 				F62E69091F625E5A00EE8AA0 /* SessionDelegate.swift in Sources */,
 				F62E69021F625E5A00EE8AA0 /* Notifications.swift in Sources */,
 				F6B79E861F62337E00BA1303 /* ViewController.swift in Sources */,
 				F62E68E41F62384400EE8AA0 /* NetworkAgent.swift in Sources */,
+				F6FA4F9A1F70EA9D00107283 /* GetRequest.swift in Sources */,
 				F62E69071F625E5A00EE8AA0 /* Result.swift in Sources */,
 				F62E69051F625E5A00EE8AA0 /* Response.swift in Sources */,
 				F6B79E971F62347800BA1303 /* BaseNetworkRequest.swift in Sources */,
